@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 4</title>
+</head>
+<body>
+    <script>
+
+let ingNombre = prompt("¿Cual es tu nombre?");
+let ingEdad = prompt(`¿Que edad tienes, ${ingNombre}?`);
+let ingEstudiante = prompt(`¿Eres estudiante, ${ingNombre}?`).toLocaleLowerCase() ==="si";
+let mensaje = `${ingNombre}, tienes ${ingEdad} años. `;
+
+if(ingEdad>=18){
+    mensaje += "Eres mayor de edad. ";
+}else{mensaje += "Eres menor de edad. " };
+
+if(ingEstudiante=="si"){
+    mensaje += "Tienes derecho a un descuento por ser estudiante.";
+}else{ mensaje += "No tienes derecho a un descuento por no ser estudiante."};
+
+alert(mensaje);
+
+    </script>
+</body>
+</html>
